@@ -27,7 +27,7 @@
   <body class="font-manrope">
     <header>
       <!-- navbar sec -->
-      <section class="container mx-auto">
+      <section class="container mx-auto my-8">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
 
@@ -137,8 +137,49 @@
         </div>
       </section>
     </header>
-    <main>
 
+    <main>
+      <!-- banner sec -->
+      <section class="container mx-auto">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="Images/1.png" class="w-full rounded-2xl" />
+            <div class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]">
+              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❮</a> 
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            </div>
+            <div class="hidden lg:block absolute bg-[#131318] w-3/6 rounded-xl p-4 top-2/3 left-[45%]">
+              <h2 class="text-white font-extrabold text-2xl my-4">Meet all the heroes from the field</h2>
+              <p class="text-[#FFFFFF99] mb-4">Encounter the extraordinary prowess and indomitable spirit of hockey's heroes, showcasing skill, dedication, and unforgettable moments on the ice.</p>
+            </div>
+          </div> 
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+            <div class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]">
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a> 
+              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+            <div class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]">
+              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❮</a> 
+              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+            <div class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]">
+              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❮</a> 
+              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            </div>
+          </div>
+        </div>
+        <div class= "lg:hidden bg-[#131318] rounded-xl p-4 my-4">
+          <h2 class="text-white font-extrabold text-lg my-4">Meet all the heroes from the field</h2>
+          <p class="text-[#FFFFFF99] mb-4 text-sm">Encounter the extraordinary prowess and indomitable spirit of hockey's heroes, showcasing skill, dedication, and unforgettable moments on the ice.</p>
+        </div>
+      </section>
     </main>
   </body>
 </html>
