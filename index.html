@@ -18,6 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              color13: "#131318",
+            },
+          },
+        },
+      };
+    </script>
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
@@ -30,7 +42,6 @@
       <section class="container mx-auto my-8">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
-
             <!-- hamburger icon -->
             <div class="lg:hidden">
               <div class="dropdown">
@@ -114,7 +125,7 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <button class="btn btn-ghost btn-circle hidden lg:flex ">
+            <button class="btn btn-ghost btn-circle hidden lg:flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -140,46 +151,184 @@
 
     <main>
       <!-- banner sec -->
-      <section class="container mx-auto">
+      <section class="container mx-auto lg:mb-24">
         <div class="carousel w-full">
           <div id="slide1" class="carousel-item relative w-full">
             <img src="Images/1.png" class="w-full rounded-2xl" />
-            <div class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]">
-              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❮</a> 
-              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            <div
+              class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]"
+            >
+              <a href="#slide4" class="btn btn-circle bg-color13 text-white"
+                >❮</a
+              >
+              <a href="#slide2" class="btn btn-circle bg-color13 text-white"
+                >❯</a
+              >
             </div>
-            <div class="hidden lg:block absolute bg-[#131318] w-3/6 rounded-xl p-4 top-[60%] left-[45%]">
-              <h2 class="text-white font-extrabold text-2xl my-4">Meet all the heroes from the field</h2>
-              <p class="text-[#FFFFFF99] mb-4">Encounter the extraordinary prowess and indomitable spirit of hockey's heroes, showcasing skill, dedication, and unforgettable moments on the ice.</p>
+            <div
+              class="hidden lg:block absolute bg-color13 w-3/6 rounded-xl p-4 top-[60%] left-[45%]"
+            >
+              <h2 class="text-white font-extrabold text-2xl my-4">
+                Meet all the heroes from the field
+              </h2>
+              <p class="text-[#FFFFFF99] mb-4">
+                Encounter the extraordinary prowess and indomitable spirit of
+                hockey's heroes, showcasing skill, dedication, and unforgettable
+                moments on the ice.
+              </p>
             </div>
-          </div> 
+          </div>
           <div id="slide2" class="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-            <div class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]">
-              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a> 
-              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            <img
+              src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]"
+            >
+              <a href="#slide1" class="btn btn-circle bg-color13 text-white"
+                >❮</a
+              >
+              <a href="#slide3" class="btn btn-circle bg-color13 text-white"
+                >❯</a
+              >
             </div>
-          </div> 
+          </div>
           <div id="slide3" class="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-            <div class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]">
-              <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❮</a> 
-              <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            <img
+              src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]"
+            >
+              <a href="#slide2" class="btn btn-circle bg-color13 text-white"
+                >❮</a
+              >
+              <a href="#slide4" class="btn btn-circle bg-color13 text-white"
+                >❯</a
+              >
             </div>
-          </div> 
+          </div>
           <div id="slide4" class="carousel-item relative w-full">
-            <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-            <div class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]">
-              <a href="#slide3" class="btn btn-circle bg-[#131318] text-white">❮</a> 
-              <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❯</a>
+            <img
+              src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+              class="w-full"
+            />
+            <div
+              class="absolute flex justify-between lg:justify-normal lg:gap-8 transform -translate-y-1/2 left-5 right-5 top-1/2 lg:top-[90%]"
+            >
+              <a href="#slide3" class="btn btn-circle bg-color13 text-white"
+                >❮</a
+              >
+              <a href="#slide1" class="btn btn-circle bg-color13 text-white"
+                >❯</a
+              >
             </div>
           </div>
         </div>
-        <div class= "lg:hidden bg-[#131318] rounded-xl p-4 my-4">
-          <h2 class="text-white font-extrabold text-lg my-4">Meet all the heroes from the field</h2>
-          <p class="text-[#FFFFFF99] mb-4 text-sm">Encounter the extraordinary prowess and indomitable spirit of hockey's heroes, showcasing skill, dedication, and unforgettable moments on the ice.</p>
+        <div class="lg:hidden bg-color13 rounded-xl p-4 my-4">
+          <h2 class="text-white font-extrabold text-lg my-4">
+            Meet all the heroes from the field
+          </h2>
+          <p class="text-[#FFFFFF99] mb-4 text-sm">
+            Encounter the extraordinary prowess and indomitable spirit of
+            hockey's heroes, showcasing skill, dedication, and unforgettable
+            moments on the ice.
+          </p>
+        </div>
+      </section>
+      <!-- facility statistics sec -->
+      <section class="container mx-auto">
+        <div class="border-y border-dashed border-[#13131833] py-8">
+          <h1 class="text-center text-4xl font-extrabold text-color13 mb-7">
+            Professional Hockeys Club
+          </h1>
+          <p class="text-[#13131899] text-center font-medium">
+            Experience the Pinnacle of Professional Hockey: Unveiling the
+            Triumphs and Legacy of Where Skill, Strategy, and Spirit Collide.
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-evenly space-y-6 lg:space-y-0 border-b border-dashed border-[#13131833] py-9">
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-red-500"
+              style="--value: 87"
+              role="progressbar"
+            >
+              <span class="text-color13 font-extrabold">87%</span>
+            </div>
+            <h3 class="text-xl font-semibold">Prayer Facility</h3>
+            <p class="text-[#13131899]">
+              Empowering Spiritual Connections Through Prayer Facilities.
+            </p>
+          </div>
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-emerald-400"
+              style="--value: 95"
+              role="progressbar"
+            >
+              <span class="text-color13 font-extrabold">95%</span>
+            </div>
+            <h3 class="text-xl font-semibold">Experienced Coach</h3>
+            <p class="text-[#13131899]">
+              Guiding, Inspiring, Developing, Winning, Mentor, Expert.
+            </p>
+          </div>
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-lime-400"
+              style="--value: 90"
+              role="progressbar"
+            >
+              <span class="text-color13 font-extrabold">90%</span>
+            </div>
+            <h3 class="text-xl font-semibold">Senior Player</h3>
+            <p class="text-[#13131899]">
+              Experienced leader, skillful contributor, team cornerstone.
+            </p>
+          </div>
+          <div class="text-center space-y-4">
+            <div
+              class="radial-progress text-blue-500"
+              style="--value: 80"
+              role="progressbar"
+            >
+              <span class="text-color13 font-extrabold">80%</span>
+            </div>
+            <h3 class="text-xl font-semibold">Training Ground</h3>
+            <p class="text-[#13131899]">
+              Forging Skills, Fostering Growth, Unleashing Potential.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- programme sec -->
+      <section class="container mx-auto my-8">
+        <div class="text-center space-y-6">
+          <h1 class="text-4xl text-color13 font-extrabold">Program Sections</h1>
+          <p class="text-[#13131899] font-medium w-3/4 mx-auto">Explore diverse program sections, each designed for targeted learning. Discover new horizons, enhance skills, and engage in meaningful experiences.</p>
+        </div>
+        <div class="my-6 py-6 lg:grid grid-cols-2 gap-6 space-y-6 lg:space-y-0 border-y border-dashed border-[#13131833]">
+          <div style="background: linear-gradient(90deg, #13131380 0%, #13131380 100%), url(Images/2.png); background-repeat: no-repeat; background-size: cover;" class="h-[338px] flex flex-col p-10 justify-end rounded-2xl">
+            <h3 class="text-xl text-white font-extrabold mb-4">Junior Programme</h3>
+            <p class="text-white font-medium mb-6 lg:w-3/5">Nurturing young talents through dynamic coaching. Skill development, teamwork, and fun activities shape our junior program for future champions.</p>
+            <button class="btn bg-red-500 border-none w-max text-white">Register Now!</button>
+          </div>
+          <div style="background: linear-gradient(90deg, #13131380 0%, #13131380 100%), url(Images/3.png); background-repeat: no-repeat; background-size: cover;" class="h-[338px] p-10 flex flex-col justify-end rounded-2xl">
+            <h3 class="text-xl text-white font-extrabold mb-4">Teenager Programme</h3>
+            <p class="text-white font-medium mb-6 lg:w-3/5">Empowering teens through mentorship, skill-building, and personal growth programs for a brighter, confident future. Unlocking potential, fostering resilience</p>
+            <button class="btn  bg-red-500 border-none w-max text-white">Register Now!</button>
+          </div>
+          <div style="background: linear-gradient(90deg, #13131380 0%, #13131380 100%), url(Images/4.png); background-repeat: no-repeat; background-size: cover;" class="h-[450px] flex flex-col justify-end p-10 rounded-2xl col-span-2">
+            <h3 class="text-xl text-white font-extrabold mb-4">Professional Programme</h3>
+            <p class="text-white font-medium mb-6 lg:w-3/5">Enhance your career with a Professional Program – specialized training, practical skills, and industry expertise for accelerated professional growth.</p>
+            <button class="btn  bg-red-500 border-none w-max text-white">Register Now!</button>
+          </div>
         </div>
       </section>
     </main>
+
   </body>
 </html>
